@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -14,17 +13,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- themefy CSS -->
+
     <link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
-    <!-- select2 CSS -->
-    <link rel="stylesheet" href="vendors/niceselect/css/nice-select.css" />
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="vendors/owl_carousel/css/owl.carousel.css" />
-    <!-- gijgo css -->
-    <link rel="stylesheet" href="vendors/gijgo/gijgo.min.css" />
+    <!-- scrollabe  -->
+    <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
-    <link rel="stylesheet" href="vendors/tagsinput/tagsinput.css" />
-
+    <!-- datatable CSS -->
+    <link
+      rel="stylesheet"
+      href="vendors/datatable/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendors/datatable/css/responsive.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendors/datatable/css/buttons.dataTables.min.css"
+    />
     <!-- date picker -->
     <link rel="stylesheet" href="vendors/datepicker/date-picker.css" />
     <!-- scrollabe  -->
@@ -53,12 +60,8 @@
     <link rel="stylesheet" href="css/metisMenu.css" />
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS" />
   </head>
   <body class="crm_body_bg">
-    <!-- main content part here -->
-
-    <!-- sidebar  -->
     <!-- sidebar part here -->
     <nav
       class="
@@ -75,7 +78,7 @@
         </div>
       </div>
       <ul id="sidebar_menu">
-        <li class="mm-active">
+        <li class="">
           <a class="" href="index.html" aria-expanded="false">
             <!-- <i class="fas fa-th"></i> -->
             <div class="icon_menu">
@@ -121,7 +124,7 @@
             <span>Course & Category</span>
           </a>
         </li>
-        <li class="">
+        <li class="mm-active">
           <a class="" href="client.html" aria-expanded="false">
             <!-- <i class="fas fa-th"></i> -->
             <div class="icon_menu">
@@ -239,72 +242,62 @@
       </div>
       <!--/ menu  -->
       <div class="main_content_iner">
-        <div class="container-fluid p-0">
-          <div class="row">
+        <div class="container-fluid p-0 sm_padding_15px">
+          <div class="row justify-content-center">
             <div class="col-lg-12">
-              <div class="single_element">
-                <div class="quick_activity">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="quick_activity_wrap">
-                        <!-- single_quick_activity  -->
-                        <div class="single_quick_activity">
-                          <div class="count_content">
-                            <p>Contact List</p>
-                            <h3><span class="counter">350</span></h3>
-                          </div>
-
-                          <div id="bar1" class="barfiller">
-                            <div class="tipWrap">
-                              <span class="tip"></span>
-                            </div>
-                            <span class="fill" data-percentage="80"></span>
-                          </div>
+              <div class="white_card card_height_100 mb_30">
+                <div class="white_card_header">
+                  <div class="box_header m-0">
+                    <div class="main-title">
+                      <h3 class="m-0">Upload Team</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="white_card_body">
+                  <div class="card-body">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <label for="inputName">Client Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="inputName"
+                          />
                         </div>
-                        <!-- single_quick_activity  -->
-                        <div class="single_quick_activity">
-                          <div class="count_content">
-                            <p>Projects</p>
-                            <h3><span class="counter">35</span></h3>
-                          </div>
 
-                          <div id="bar2" class="barfiller">
-                            <div class="tipWrap">
-                              <span class="tip"></span>
-                            </div>
-                            <span class="fill" data-percentage="50"></span>
-                          </div>
+                        <div class="form-group col-md-12">
+                          <label for="position">Position And Place</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="position"
+                            placeholder="CEO OF John doe"
+                          />
                         </div>
-                        <!-- single_quick_activity  -->
-                        <div class="single_quick_activity">
-                          <div class="count_content">
-                            <p>Training Category</p>
-                            <h3><span class="counter">20</span></h3>
-                          </div>
-
-                          <div id="bar3" class="barfiller">
-                            <div class="tipWrap">
-                              <span class="tip"></span>
-                            </div>
-                            <span class="fill" data-percentage="65"></span>
-                          </div>
+                        <div class="form-group col-md-12">
+                          <label for="title-two">Testimony</label>
+                          <textarea
+                            name=""
+                            class="form-control"
+                            id=""
+                            cols="30"
+                            rows="10"
+                          ></textarea>
                         </div>
-                        <!-- single_quick_activity  -->
-                        <div class="single_quick_activity">
-                          <div class="count_content">
-                            <p>Training Course</p>
-                            <h3><span class="counter">100</span></h3>
-                          </div>
 
-                          <div id="bar4" class="barfiller">
-                            <div class="tipWrap">
-                              <span class="tip"></span>
-                            </div>
-                            <span class="fill" data-percentage="85"></span>
+                        <div class="form-row mb-5">
+                          <h6 class="card-subtitle mb-4">Client Picture</h6>
+                          <div class="form-group mb-0">
+                            <input type="file" class="form-control-file" />
                           </div>
                         </div>
                       </div>
-                    </div>
+
+                      <button type="submit" class="btn btn-primary">
+                        Save
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -332,6 +325,7 @@
       </div>
     </section>
     <!-- main content part end -->
+    
 
     <div id="back-top" style="display: none">
       <a title="Go to Top" href="#">
