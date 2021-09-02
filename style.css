@@ -973,6 +973,11 @@ a:active {
 /*--------------------------------------------------------------
 ## Logo
 --------------------------------------------------------------*/
+@media (max-width: 1200px) and (min-width: 1199px) {
+  #site-logo {
+    margin-left: -50em;
+  }
+}
 #site-logo {
   min-width: 145px;
   padding: 20px 0;
@@ -5317,6 +5322,9 @@ object {
     opacity: 0;
   }
 }
+.ot-tabs {
+  margin-left: 5em;
+}
 .ot-tabs .tabs-heading {
   margin: 0 -5px;
   overflow: hidden;
@@ -5911,6 +5919,9 @@ div.tp-bullet:hover {
 .cta .ot-heading {
   margin-bottom: 0;
 }
+.tab-video .ot-heading {
+  margin-left: 5em;
+}
 .cta .ot-heading span {
   font-size: 20px;
   font-weight: 500;
@@ -6433,6 +6444,9 @@ div.tp-bullet:hover {
   }
   .tp-bullets.bullet-home-1 {
     display: none;
+  }
+  .ot-tabs {
+    margin-left: -1em;
   }
 }
 /* Index 5 */
