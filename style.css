@@ -1137,6 +1137,7 @@ a:active {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
+  text-transform:uppercase;
 }
 
 .main-navigation > ul > li:before {
