@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
+    <link rel="stylesheet" href="css/career.css" />
   </head>
 
   <body class="royal_preloader">
@@ -44,18 +45,17 @@
                           <a href="about-us.html">About us</a>
                         </li>
 
-                     
-                  <li >
-                    <a href="Training.html">IT Training</a>
-                  </li>
-                  
-                  <li><a href="career.html">Careers</a></li>
-                  
-                  <li><a href="#">BootCamp</a></li>
-                  
-                  <li><a href="blog.html">News</a></li>
+                        <li>
+                          <a href="Training.html">IT Training</a>
+                        </li>
 
-                        <li class="current-menu-item current-menu-ancestor">
+                        <li class="current-menu-item current-menu-ancestor"><a href="career.html">Careers</a></li>
+
+                        <li><a href="#">BootCamp</a></li>
+
+                        <li><a href="blog.html">News</a></li>
+
+                        <li >
                           <a href="contact.html">Contacts</a>
                         </li>
 
@@ -92,18 +92,17 @@
                     <a href="about-us.html">About us</a>
                   </li>
 
-                       
-                  <li >
+                  <li>
                     <a href="Training.html">IT Training</a>
                   </li>
-                  
-                  <li><a href="career.html">Careers</a></li>
+
+                  <li class="current-menu-item current-menu-ancestor"><a href="career.html">Careers</a></li>
+
                   <li><a href="#">BootCamp</a></li>
-                  
+
                   <li><a href="blog.html">News</a></li>
 
-
-                  <li class="current-menu-item current-menu-ancestor">
+                  <li >
                     <a href="contact.html">Contacts</a>
                   </li>
 
@@ -116,123 +115,219 @@
           </div>
         </div>
       </header>
-      <div id="content" class="site-content">
-        <div class="page-header flex-middle">
-          <div class="container">
-            <div class="inner flex-middle">
-              <h1 class="page-title">Contact</h1>
-              <ul id="breadcrumbs" class="breadcrumbs none-style">
-                <li><a href="index.html">Home</a></li>
-                <i class="fa fa-arrow-right ml-3"></i>
-                <li class="active">Contact</li>
-              </ul>
+
+      <!-- Banner
+================================================== -->
+      <div
+        id="banner"
+        class="with-transparent-header parallax background"
+        style="background-image: url(images/banner-home-02.jpg)"
+        data-img-width="2000"
+        data-img-height="1330"
+        data-diff="300"
+      >
+        <div class="container">
+          <div class="sixteen columns">
+            <div class="search-container">
+              <!-- Form -->
+              <h2>Find Job</h2>
+              <input
+                type="text"
+                class="ico-01"
+                placeholder="job title, keywords or company name"
+                value=""
+              />
+              <input
+                type="text"
+                class="ico-02"
+                placeholder="city, province or region"
+                value=""
+              />
+              <button><i class="fa fa-search"></i></button>
+
+              <!-- Browse Jobs -->
+              <div class="browse-jobs">
+                Browse job offers by
+                <a href="browse-categories.html"> category</a> or
+                <a href="#">location</a>
+              </div>
+
+              <!-- Announce -->
+              <!-- 				<div class="announce">
+					We’ve over <strong>15 000</strong> job offers for you!
+				</div> -->
             </div>
           </div>
         </div>
-        <section class="contact-page">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="contact-left">
-                  <div class="ot-heading">
-                    <span>// contact details</span>
-                    <h2 class="main-heading">Contact us</h2>
-                  </div>
-                  <div class="space-5"></div>
-                  <p>
-                    Give us a call or drop by anytime, we endeavour to answer
-                    all enquiries within 24 hours on business days. We will be
-                    happy to answer your questions.
-                  </p>
-                  <div class="contact-info box-style1">
-                    <i class="flaticon-world-globe"></i>
-                    <div class="info-text">
-                      <h6>Our Address:</h6>
-                      <p>411 University St, Seattle, USA</p>
-                    </div>
-                  </div>
-                  <div class="contact-info box-style1">
-                    <i class="flaticon-envelope"></i>
-                    <div class="info-text">
-                      <h6>Our Mailbox:</h6>
-                      <p>SOLVIT@mail.net</p>
-                    </div>
-                  </div>
-                  <div class="contact-info box-style1">
-                    <i class="flaticon-phone-1"></i>
-                    <div class="info-text">
-                      <h6>Our Phone:</h6>
-                      <p>+1 -800-456-478-23</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <form action="" method="post" class="wpcf7">
-                  <div class="main-form">
-                    <h2>Ready to Get Started?</h2>
-                    <p class="font14">
-                      Your email address will not be published. Required fields
-                      are marked *
-                    </p>
-                    <p>
-                      <input
-                        type="text"
-                        name="name"
-                        value=""
-                        size="40"
-                        class=""
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Your Name *"
-                        required
-                      />
-                    </p>
-                    <p>
-                      <input
-                        type="email"
-                        name="email"
-                        value=""
-                        size="40"
-                        class=""
-                        aria-required="true"
-                        aria-invalid="false"
-                        placeholder="Your Email *"
-                        required
-                      />
-                    </p>
-                    <p>
-                      <textarea
-                        name="message"
-                        cols="40"
-                        rows="10"
-                        class=""
-                        aria-invalid="false"
-                        placeholder="Message..."
-                        required
-                      ></textarea>
-                    </p>
-                    <p>
-                      <button type="submit" class="octf-btn octf-btn-light">
-                        Send Message
-                      </button>
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
+      </div>
+
+      <!-- Content
+================================================== -->
+
+      <!-- Categories -->
+      <div class="container">
+        <div class="sixteen columns">
+          <h3 class="margin-bottom-20 margin-top-10">Popular Categories</h3>
+
+          <!-- Popular Categories -->
+          <div class="categories-boxes-container">
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Bar-Chart"></i>
+              <h4>Accouting / Finance</h4>
+              <span>32</span>
+            </a>
+
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Car"></i>
+              <h4>Automotive Jobs</h4>
+              <span>76</span>
+            </a>
+
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Worker"></i>
+              <h4>Construction / Facilities</h4>
+              <span>31</span>
+            </a>
+
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Student-Female"></i>
+              <h4>Education / Training</h4>
+              <span>76</span>
+            </a>
+
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Medical-Sign"></i>
+              <h4>Healthcare</h4>
+              <span>32</span>
+            </a>
+
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Plates"></i>
+              <h4>Restarant / Food Service</h4>
+              <span>67</span>
+            </a>
+
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Globe"></i>
+              <h4>Transportation / Logistics</h4>
+              <span>45</span>
+            </a>
+
+            <!-- Box -->
+            <a href="#" class="category-small-box">
+              <i class="ln ln-icon-Laptop-3"></i>
+              <h4>Telecommunication</h4>
+              <span>96</span>
+            </a>
           </div>
-        </section>
-        <div class="no-padding">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86077.66255184308!2d-122.40402224079803!3d47.60810999586645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab3f905c4b1%3A0x96bf575ff75ab1aa!2s411%20University%20St%2C%20Seattle%2C%20WA%2098101%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1584084043716!5m2!1svi!2s"
-              height="500"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            ></iframe>
+
+          <div class="clearfix"></div>
+          <div class="margin-top-30"></div>
+
+          <div class="margin-bottom-55"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Recent Jobs -->
+        <div class="eleven columns">
+          <div class="padding-right">
+            <h3 class="margin-bottom-25">Recent Jobs</h3>
+            <div class="listings-container">
+              <!-- Listing -->
+              <a href="job-page.html" class="listing full-time">
+                <div class="listing-title">
+                  <h4>
+                    Marketing Coordinator - SEO / SEM Experience
+                    <span class="listing-type">Full-Time</span>
+                  </h4>
+                  <ul class="listing-icons">
+                    <li><i class="ln ln-icon-Management"></i> King</li>
+                    <li>
+                      <i class="ln ln-icon-Map2"></i> 7th Avenue, New York, NY,
+                      United States
+                    </li>
+                    <li><i class="ln ln-icon-Money-2"></i> $5000 - $7000</li>
+                    <li><div class="listing-date new">new</div></li>
+                  </ul>
+                </div>
+              </a>
+
+              <!-- Listing -->
+              <a href="job-page.html" class="listing part-time">
+                <div class="listing-title">
+                  <h4>
+                    Core PHP Developer for Site Maintenance
+                    <span class="listing-type">Part-Time</span>
+                  </h4>
+                  <ul class="listing-icons">
+                    <li><i class="ln ln-icon-Management"></i> Cubico</li>
+                    <li><i class="ln ln-icon-Map2"></i> Sydney</li>
+                    <li><i class="ln ln-icon-Money-2"></i> $125 / hour</li>
+                    <li><div class="listing-date">3d ago</div></li>
+                  </ul>
+                </div>
+              </a>
+
+              <!-- Listing -->
+              <a href="job-page.html" class="listing full-time">
+                <div class="listing-title">
+                  <h4>
+                    Restaurant Team Member - Crew
+                    <span class="listing-type">Full-Time</span>
+                  </h4>
+                  <ul class="listing-icons">
+                    <li><i class="ln ln-icon-Management"></i> King</li>
+                    <li><i class="ln ln-icon-Map2"></i> Sydney</li>
+                    <li><div class="listing-date">3d ago</div></li>
+                  </ul>
+                </div>
+              </a>
+
+              <!-- Listing -->
+              <a href="job-page.html" class="listing internship">
+                <div class="listing-title">
+                  <h4>
+                    Power Systems User Experience Designer
+                    <span class="listing-type">Internship</span>
+                  </h4>
+                  <ul class="listing-icons">
+                    <li><i class="ln ln-icon-Management"></i> Hexagon</li>
+                    <li><i class="ln ln-icon-Map2"></i> London</li>
+                    <li><i class="ln ln-icon-Money-2"></i> $55 / hour</li>
+                    <li><div class="listing-date">4d ago</div></li>
+                  </ul>
+                </div>
+              </a>
+
+              <!-- Listing -->
+              <a href="job-page.html" class="listing freelance">
+                <div class="listing-title">
+                  <h4>
+                    iPhone / Android Music App Development
+                    <span class="listing-type">Freelance</span>
+                  </h4>
+                  <ul class="listing-icons">
+                    <li><i class="ln ln-icon-Management"></i> Hexagon</li>
+                    <li><i class="ln ln-icon-Map2"></i> London</li>
+                    <li><i class="ln ln-icon-Money-2"></i> $85 / hour</li>
+                    <li><div class="listing-date">4d ago</div></li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+
+            <a href="#" class="button centered"
+              ><i class="fa fa-plus-circle"></i> Show More Jobs</a
+            >
+            <div class="margin-bottom-55"></div>
           </div>
         </div>
       </div>
