@@ -8,8 +8,8 @@
 .company-info img {
   float: left;
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   margin-right: 30px;
 }
 
@@ -261,7 +261,6 @@ input.ico-01 {
 
 /* Titlebar With Photo Background */
 #titlebar.photo-bg {
-  background-color: #222;
   padding: 95px 0;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -316,7 +315,7 @@ input.ico-01 {
   display: inline-block;
   background-color: rgba(34, 34, 34, 0.65);
   position: absolute;
-  z-index: 10;
+  z-index: -10;
   top: 0px;
 }
 
