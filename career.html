@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
     <link rel="stylesheet" href="css/career.css" />
+    <link rel="stylesheet" href="css/boot.css" />
   </head>
 
   <body class="royal_preloader">
@@ -122,48 +123,38 @@
 
       <!-- Banner
 ================================================== -->
-      <div
-        id="banner"
-        class="with-transparent-header parallax background"
-        style="background-image: url(images/banner-home-02.jpg)"
-        data-img-width="2000"
-        data-img-height="1330"
-        data-diff="300"
+
+      <section
+        class="page-title"
+        style="
+          background-image: url(images/bg-pheader.jpg);
+          background-size: cover;
+          margin-bottom: 5%;
+        "
       >
-        <div class="container">
-          <div class="sixteen columns">
-            <div class="search-container">
-              <!-- Form -->
-              <h2>Find Job</h2>
-              <input
-                type="text"
-                class="ico-01"
-                placeholder="job title"
-                value=""
-              />
-              <input
-                type="text"
-                class="ico-02"
-                placeholder="Country/ City"
-                value=""
-              />
-              <button><i class="fa fa-search"></i></button>
-
-              <!-- Browse Jobs -->
-              <div class="browse-jobs">
-                Browse job offers by
-                <a href="browse-categories.html"> category</a> or
-                <a href="#">location</a>
-              </div>
-
-              <!-- Announce -->
-              <!-- 				<div class="announce">
-					We’ve over <strong>15 000</strong> job offers for you!
-				</div> -->
+        <div class="auto-container">
+          <h1>Careers</h1>
+          <!-- Search Boxed -->
+          <div class="search-boxed">
+            <div class="search-box">
+              <form method="post" action="#">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    name="search-field"
+                    value=""
+                    placeholder="Job title "
+                    required
+                  />
+                  <button type="submit">
+                    <span class="icon fa fa-search"></span>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Content
 ================================================== -->
@@ -171,7 +162,9 @@
       <!-- Categories -->
       <div class="container">
         <div class="sixteen columns">
-          <h3 class="margin-bottom-20 margin-top-10">Popular Categories</h3>
+          <h3 class="margin-bottom-40 margin-top-10 text-center">
+            Popular Categories
+          </h3>
 
           <!-- Popular Categories -->
           <div class="categories-boxes-container">

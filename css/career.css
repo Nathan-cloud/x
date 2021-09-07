@@ -102,6 +102,7 @@ input.ico-02 {
 }
 input.ico-01 {
   background: #fff;
+  width: 60%;
 }
 
 .search-container input:focus {
@@ -116,8 +117,6 @@ input.ico-01 {
   font-size: 20px;
   box-sizing: border-box;
   text-align: center;
-  height: 60px;
-  width: 7%;
   position: relative;
 }
 
@@ -137,15 +136,6 @@ input.ico-01 {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 99;
-}
-
-.search-container button:hover:before {
-  opacity: 1;
-}
-
-.search-container button i {
-  z-index: 100;
-  position: relative;
 }
 
 /* Announce */
