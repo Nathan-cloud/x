@@ -63,6 +63,10 @@
   .select2 {
     width: 100%;
   }
+  .search-catalog {
+    margin-left: -50%;
+    width: 100%;
+  }
 }
 .select2-container
   .select2-search--inline
