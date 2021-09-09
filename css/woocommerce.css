@@ -1,8 +1,9 @@
 /* shop */
 .search-catalog {
-  padding-top: 100px;
+  padding-top: 20px;
   padding-left: 270px;
 }
+
 .woocommerce-result-count {
   color: #7e7e7e;
   margin: 14px 0 0 0;

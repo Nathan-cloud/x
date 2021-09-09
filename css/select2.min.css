@@ -1,6 +1,6 @@
-/* .select2 {
+.select2 input {
   width: 170%;
-} */
+}
 .select2-container {
   box-sizing: border-box;
   display: inline-block;
