@@ -990,7 +990,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: #43baff;
+  color: #fff;
 }
 a:hover,
 a:focus,
@@ -2150,6 +2150,8 @@ a:active {
 .post-box .entry-title a {
   color: #1b1d21;
   display: inline-block;
+  font-size:18px;
+  height: 20px;
 }
 .post-box .entry-title a:hover {
   text-decoration: underline;

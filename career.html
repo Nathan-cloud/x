@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/woocommerce.css" />
+    <link href="css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/royal-preload.css" />
     <link rel="stylesheet" href="css/career.css" />
+    <link rel="stylesheet" href="css/woocommerce.css">
+    
 
 
-    <!-- <link rel="stylesheet" href="css/boot.css" /> -->
   </head>
 
   <body class="royal_preloader">
@@ -41,7 +42,7 @@
                   <div class="octf-col menu-col">
                     <nav id="site-navigation" class="main-navigation">
                       <ul class="menu">
-                        <li>
+                        <li class="current-menu-item current-menu-ancestor">
                           <a href="index.html">Home</a>
                         </li>
                         <li>
@@ -52,27 +53,24 @@
                           <a href="Training.html">IT Training</a>
                         </li>
 
-                        <li class="current-menu-item current-menu-ancestor">
-                          <a href="career.html">Careers</a>
-                        </li>
+                        <li><a href="career.html">Careers</a></li>
 
                         <li><a href="bootcamp.html">BootCamp</a></li>
 
                         <li><a href="blog.html">News</a></li>
 
-                        <li>
-                          <a href="contact.html">Contacts</a>
-                        </li>
+                        <li><a href="contact.html">Contacts</a></li>
 
                         <li>
                           <a href="faq.html">Faq</a>
                         </li>
+                        <li></li>
                       </ul>
                     </nav>
                   </div>
                   <div class="octf-header-module">
                     <div class="btn-cta-group btn-cta-header">
-                      <a class="octf-btn octf-btn-third" href="#">sign up</a>
+                      <a class="octf-btn octf-btn-third" href="#">Sign up</a>
                     </div>
                   </div>
                 </div>
@@ -95,38 +93,33 @@
             <div class="mmenu_wrapper">
               <div class="mobile_nav collapse">
                 <ul id="menu-main-menu" class="mobile_mainmenu">
-                  <li>
+                  <li class="current-menu-item current-menu-ancestor">
                     <a href="index.html">Home</a>
                   </li>
                   <li>
                     <a href="about-us.html">About us</a>
                   </li>
-
                   <li>
                     <a href="Training.html">IT Training</a>
                   </li>
 
-                  <li class="current-menu-item current-menu-ancestor">
-                    <a href="career.html">Careers</a>
-                  </li>
+                  <li><a href="career.html">Careers</a></li>
 
                   <li><a href="bootcamp.html">BootCamp</a></li>
 
                   <li><a href="blog.html">News</a></li>
 
-                  <li>
-                    <a href="contact.html">Contacts</a>
-                  </li>
+                  <li><a href="contact.html">Contacts</a></li>
 
                   <li>
                     <a href="faq.html">Faq</a>
                   </li>
-                     <div class="octf-header-module">
-                    <div class="btn-cta-group btn-cta-header">
-                      <a class="octf-btn octf-btn-third" href="#">sign up</a>
-                    </div>
-                  </div>
                 </ul>
+                <div class="octf-header-module">
+                  <div class="btn-cta-group btn-cta-header">
+                    <a class="octf-btn octf-btn-third" href="#">sign up</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -157,51 +150,131 @@
         <div class="row">
           <div class="col-lg-7">
             <div class="sixteen columns">
-              <div class="row">
-                <div class="col-lg-12 text-center mt-5">
-                  <div class="ot-heading">
-                    
-                    <h2 class="main-heading uppercase">Popular Categories</h2>
-                  </div>
-
-                  <div class="space-20"></div>
-                </div>
-              </div>
+              <h3
+                class="margin-bottom-20 margin-top-10"
+                style="margin-top: 1em; margin-left: 36.5%; "
+              >
+                Popular Categories
+              </h3>
 
               <!-- Popular Categories -->
-              <div class="categories-boxes-container">
-                <!-- Box -->
-                <a href="#" class="category-small-box">
-                  <i class="fa fa-chart-bar"></i>
-                  <h4>System Analysis</h4>
-                  <span>3 </span>
-                </a>
-
-                <!-- Box -->
-                <a href="#" class="category-small-box">
-                  <i class="fa fa-laptop-code"></i>
-                  <h4>Front End</h4>
-                  <span>7 </span>
-                </a>
-
-                <!-- Box -->
-                <a href="#" class="category-small-box">
-                  <i class="fa fa-cogs"></i>
-                  <h4>Back End</h4>
-                  <span>4 </span>
-                </a>
-                <a href="#" class="category-small-box">
-                  <i class="fa fa-database"></i>
-                  <h4>Database Development</h4>
-                  <span>1 </span>
-                </a>
-              </div>
+              <nav>
+                <div
+                    class="nav nav-tabs"
+                    id="nav-tab"
+                    role="tablist"
+                >
+                 <div class="categories-boxes-container">
+                
+                    <a  class=" nav-item 
+                    active category-small-box "       id="custom-nav-home-tab"
+                    data-toggle="tab"
+                    href="#custom-nav-home"
+                    role="tab"
+                    aria-controls="custom-nav-home"
+                    aria-selected="true">
+                    <i class="fa fa-chart-bar"></i>
+                    <h4>System Analysis</h4>
+                    <span>3 </span>
+                
+                    </a>
+                    <a
+                        class="nav-item category-small-box"
+                        id="custom-nav-profile-tab"
+                        data-toggle="tab"
+                        href="#custom-nav-profile"
+                        role="tab"
+                        aria-controls="custom-nav-profile"
+                        aria-selected="false"
+                        >  
+                        <i class="fa fa-database"></i>
+                        <h4>Database Development</h4>
+                        <span>1 </span>
+                        </a>
+                    <a
+                        class="nav-item  category-small-box"
+                        id="custom-nav-contact-tab"
+                        data-toggle="tab"
+                        href="#custom-nav-contact"
+                        role="tab"
+                        aria-controls="custom-nav-contact"
+                        aria-selected="false"
+                        >   <i class="fa fa-laptop-code"></i>
+                        <h4>Front End</h4>
+                        <span>7 </span>
+                      </a>
+                      <a
+                      class="nav-item  category-small-box"
+                      id="custom-nav-contact-new"
+                      data-toggle="tab"
+                      href="#custom-nav-new"
+                      role="tab"
+                      aria-controls="custom-nav-new"
+                      aria-selected="false"
+                      >  <i class="fa fa-cogs"></i>
+                      <h4>Back End</h4>
+                      <span>4 </span>
+                    </a>
+                </div>
+            </nav>
+            <div
+                class="tab-content pl-3 pt-2"
+                id="nav-tabContent"
+            >
+                <div
+                    class="
+                        tab-pane
+                        fade
+                        show
+                        active
+                    "
+                    id="custom-nav-home"
+                    role="tabpanel"
+                    aria-labelledby="custom-nav-home-tab"
+                >
+                    <p>
+                      <a href="#" class="btn btn-info rounded-pill mb-3 pl-3 pr-3">Node js</a>
+                    </p>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="custom-nav-profile"
+                    role="tabpanel"
+                    aria-labelledby="custom-nav-profile-tab"
+                >
+                <p>
+                  <a href="#" class="btn btn-info rounded-pill mb-3 pl-3 pr-3">.Net</a>
+                </p>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="custom-nav-contact"
+                    role="tabpanel"
+                    aria-labelledby="custom-nav-contact-tab"
+                >
+                <p>
+                  <a href="#" class="btn btn-info rounded-pill mb-3 pl-3 pr-3">Php</a>
+                </p>
+                </div>
+                <div
+                class="tab-pane fade"
+                id="custom-nav-new"
+                role="tabpanel"
+                aria-labelledby="custom-nav-contact-new"
+            >
+            <p>
+              <a href="#" class="btn btn-info rounded-pill mb-3 pl-3 pr-3">React</a>
+            </p>
+            </div>
+            </div>
 
               <div class="clearfix"></div>
               <div class="margin-top-30"></div>
 
               <div class="margin-bottom-55"></div>
             </div>
+
+         
 
             <div class="container">
               <!-- Recent Jobs -->
@@ -302,30 +375,40 @@
                   <div class="margin-bottom-55"></div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="search-catalog">
+              </div>
+              </div>
+           
+          
+          <div class="col-lg-5 ">
+            <div class="search-catalog" style="float: left;">
               <div class="container">
                   <div class="row">
                     
-                      <div class="col-lg-6 col-md-12  mb-lg-0 mb-5">
+                      <div class="col-lg-6  ">
                         
                           <form class="woocommerce-ordering" method="get">
-                              <select name="orderby" class="orderby" aria-label="Shop order">
-                                      <option value="category" selected="selected">Default Category</option>
-                                      <option value="popularity">Sort by popularity</option>
-                                      <option value="rating">Sort by average latest </option>
-                                     
-                              </select>
+                            
+                            <select id="cat" class="category  form-control" name="category[]" multiple >
+                             
+                              <option value="1">Laravel</option>
+                              <option value="2">Front-End</option>
+                              <option value="3">React</option>
+                              <option value="4">Jquery ui</option>
+                              <option value="5">Android</option>
+                              <option value="6">React Native</option>
+              
+                              <option value="8">Bootstrap 4</option>
+                          </select>
+                          <label for="cat">Select Category</label>
                 
                       </div>
                        
-                      <div class="widget-area  col-lg-6 col-md-12 col-sm-12">
+                      <div class="widget-area  col-lg-6 " style="">
                           <aside id="search-2" class="widget widget_search">
                               <div class="search-form">
                                   <input type="search" class="search-field" placeholder="Search…" value="" name="s">
                                   <button type="submit" class="search-submit"><i class="flaticon-search"></i></button>
+                                  </div>
                               </form>
                           </aside>
                         
@@ -441,13 +524,22 @@
     ></a>
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
+    
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/easypiechart.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/boot.js"></script>
     <script src="js/header-mobile.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('.category').select2();
+      });
+  </script>
     <!-- REVOLUTION JS FILES -->
 
     <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -460,15 +552,6 @@
     <script src="js/rev-script-2.js"></script>
     <script src="js/royal_preloader.min.js"></script>
     <script>
-      $('.default_option').click(function () {
-        $('.dropdown ul').addClass('active');
-      });
-
-      $('.dropdown ul li').click(function () {
-        var text = $(this).text();
-        $('.default_option').text(text);
-        $('.dropdown ul').removeClass('active');
-      });
       window.jQuery = window.$ = jQuery;
       (function ($) {
         'use strict';
