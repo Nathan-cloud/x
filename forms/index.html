@@ -1,175 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from colorlib.com/etc/cf/ContactFrom_v3/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 07:12:28 GMT -->
-  <!-- Added by HTTrack --><meta
-    http-equiv="content-type"
-    content="text/html;charset=UTF-8"
-  /><!-- /Added by HTTrack -->
   <head>
-    <title>Form</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up Form by Colorlib</title>
 
     <link
       rel="stylesheet"
-      type="text/css"
-      href="vendor/bootstrap/css/bootstrap.min.css"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
     />
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/css-hamburgers/hamburgers.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="vendor/select2/select2.min.css"
-    />
-
-    <link rel="stylesheet" type="text/css" href="css/util.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="robots" content="noindex, follow" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        /* by default hide all radio_content div elements except first element */
+        $('.content .radio_content').hide();
+        $('.content .radio_content:first-child').show();
+
+        /* when any radio element is clicked, Get the attribute value of that clicked radio element and show the radio_content div element which matches the attribute value and hide the remaining tab content div elements */
+        $('.radio_wrap').click(function () {
+          var current_raido = $(this).attr('data-radio');
+          $('.content .radio_content').hide();
+          $('.' + current_raido).show();
+        });
+      });
+    </script>
   </head>
+
   <body>
-    <div class="bg-contact3" style="">
-      <div class="container-contact3">
-        <div class="wrap-contact3">
-          <form class="contact3-form validate-form">
-            <span class="contact3-form-title"> Fill the form </span>
-            <div class="wrap-contact3-form-radio">
-              <div class="contact3-form-radio m-r-42">
+    <div class="main">
+      <div class="container">
+        <div class="signup-content">
+			
+            <form method="POST" class="register-form" id="register-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <div class="form-input">
+                    <label for="first_name" class="required">First name</label>
+                    <input type="text" name="first_name" id="first_name" />
+                  </div>
+                  <div class="form-input">
+                    <label for="last_name" class="required">Last name</label>
+                    <input type="text" name="last_name" id="last_name" />
+                  </div>
+
+                  <div class="form-input">
+                    <label for="email" class="required">Email</label>
+                    <input type="text" name="email" id="email" />
+                  </div>
+                  <div class="form-input">
+                    <label for="phone_number" class="required"
+                      >Phone number</label
+                    >
+                    <input
+                      type="number"
+                      name="phone_number"
+                      id="phone_number"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-select">
+                    <div class="label-flex">
+                      <label for="meal_preference"> Education Level</label>
+                    </div>
+                    <div class="select-list">
+                      <select name="meal_preference" id="meal_preference">
+                        <option value="">Select Education Level</option>
+                        <option value="Vegetarian">High school</option>
+                        <option value="Kosher">Collage/University</option>
+                        <option value="Asian Vegetarian">IPRC Technics</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-radio">
+                    <div class="label-flex">
+                      <label for="payment">Gender</label>
+                    </div>
+                    <div class="form-radio-group">
+                      <div class="form-radio-item">
+                        <input type="radio" name="payment" id="Male" checked />
+                        <label for="Male">Male</label>
+                        <span class="check"></span>
+                      </div>
+                      <div class="form-radio-item">
+                        <input type="radio" name="payment" id="Female" />
+                        <label for="Female">Female</label>
+                        <span class="check"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-input">
+                    <label for="Dob">Date of birth</label>
+                    <input type="date" name="Dob" id="Dob" />
+                  </div>
+                  <div class="form-input">
+                    <label for="Salary">Exapected salary</label>
+                    <input type="text" name="Salary" id="Salary" />
+                  </div>
+                  <div class="form-input">
+                    <label for="file-input" class="form-control-label"
+                      >Upload You cv</label
+                    >
+                    <input
+                      type="file"
+                      id="file-input"
+                      name="file-input"
+                      class="form-control-file"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+				<label for="">Category</label>
+                <div class="radio_tabs">
+					
+                  <label class="radio_wrap" data-radio="radio_1">
+                    <input type="radio" name="sports" class="input" checked />
+                    <span class="radio_mark"> Front-End </span>
+                  </label>
+                  <label class="radio_wrap" data-radio="radio_2">
+                    <input type="radio" name="sports" class="input" />
+                    <span class="radio_mark"> Back-End </span>
+                  </label>
+                  <label class="radio_wrap" data-radio="radio_3">
+                    <input type="radio" name="sports" class="input" />
+                    <span class="radio_mark"> Mobile</span>
+                  </label>
+                  <label class="radio_wrap" data-radio="radio_4">
+                    <input type="radio" name="sports" class="input" />
+                    <span class="radio_mark"> Data Scientist </span>
+                  </label>
+                </div>
+
+                <div class="content">
+                  <div class="radio_content radio_1">
+                    <p>
+                        <div class="form-radio-group">
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Male" checked />
+							  <label for="Male">Male</label>
+							  <span class="check"></span>
+							</div>
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Female" />
+							  <label for="Female">Female</label>
+							  <span class="check"></span>
+							</div>
+						  </div>
+                    </p>
+                   
+                 
+                  </div>
+                  <div class="radio_content radio_2">
+					<p>
+                        <div class="form-radio-group">
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Male" checked />
+							  <label for="Male">secons</label>
+							  <span class="check"></span>
+							</div>
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Female" />
+							  <label for="Female">Female</label>
+							  <span class="check"></span>
+							</div>
+						  </div>
+                    </p>
+                  </div>
+                  <div class="radio_content radio_3">
+                    <p>
+                        <div class="form-radio-group">
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Male" checked />
+							  <label for="Male">third</label>
+							  <span class="check"></span>
+							</div>
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Female" />
+							  <label for="Female">Female</label>
+							  <span class="check"></span>
+							</div>
+						  </div>
+                    </p>
+                  </div>
+                  <div class="radio_content radio_4">
+                    <p>
+                        <div class="form-radio-group">
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Male" checked />
+							  <label for="Male">four</label>
+							  <span class="check"></span>
+							</div>
+							<div class="form-radio-item">
+							  <input type="checkbox" name="payment" id="Female" />
+							  <label for="Female">Female</label>
+							  <span class="check"></span>
+							</div>
+						  </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-input">
+                <label for="choose-file" class="label-title">Bio</label>
+                <textarea
+                  class="form-input"
+                  rows="4"
+                  cols="50"
+                  style="height: auto"
+                ></textarea>
+              </div>
+
+              <div class="form-submit">
                 <input
-                  class="input-radio3"
-                  id="radio1"
-                  type="radio"
-                  name="choice"
-                  value="say-hi"
-                  checked="checked"
+                  type="submit"
+                  value="Submit"
+                  class="submit"
+                  id="submit"
+                  name="submit"
                 />
-                <label class="label-radio3" for="radio1"> Others </label>
-              </div>
-              <div class="contact3-form-radio">
                 <input
-                  class="input-radio3"
-                  id="radio2"
-                  type="radio"
-                  name="choice"
-                  value="get-quote"
+                  type="submit"
+                  value="Reset"
+                  class="submit"
+                  id="reset"
+                  name="reset"
                 />
-                <label class="label-radio3" for="radio2"> Students </label>
               </div>
-            </div>
-            <div
-              class="wrap-input3 validate-input"
-              data-validate="Name is required"
-            >
-              <input
-                class="input3"
-                type="text"
-                name="name"
-                placeholder="Your Name"
-              />
-              <span class="focus-input3"></span>
-            </div>
-            <div
-              class="wrap-input3 validate-input"
-              data-validate="Valid email is required: ex@abc.xyz"
-            >
-              <input
-                class="input3"
-                type="text"
-                name="email"
-                placeholder="Your Email"
-              />
-              <span class="focus-input3"></span>
-            </div>
-            <div class="wrap-input3 input3-select">
-              <div>
-                <select class="selection-2" name="service">
-                  <option>Needed Services</option>
-                  <option>eCommerce Bussiness</option>
-                  <option>UI/UX Design</option>
-                  <option>Online Services</option>
-                </select>
-              </div>
-              <span class="focus-input3"></span>
-            </div>
-            <div class="wrap-input3 input3-select">
-              <div>
-                <select class="selection-2" name="budget">
-                  <option>Budget</option>
-                  <option>1500 $</option>
-                  <option>2000 $</option>
-                  <option>3000 $</option>
-                </select>
-              </div>
-              <span class="focus-input3"></span>
-            </div>
-            <div
-              class="wrap-input3 validate-input"
-              data-validate="Message is required"
-            >
-              <textarea
-                class="input3"
-                name="message"
-                placeholder="Your Message"
-              ></textarea>
-              <span class="focus-input3"></span>
-            </div>
-            <div class="container-contact3-form-btn">
-              <button class="contact3-form-btn">Submit</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <div id="dropDownSelect1"></div>
 
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="vendor/select2/select2.min.js"></script>
-    <script>
-      $('.selection-2').select2({
-        minimumResultsForSearch: 20,
-        dropdownParent: $('#dropDownSelect1'),
-      });
-    </script>
-
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-23581568-13');
-    </script>
-    <script
-      defer
-      src="../../../../static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"rayId":"68c6d90c5e6f4fd1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.1","si":10}'
-    ></script>
   </body>
-
-  <!-- Mirrored from colorlib.com/etc/cf/ContactFrom_v3/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 07:12:32 GMT -->
 </html>
