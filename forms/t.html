@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Sign Up Form by Colorlib</title>
+    <title>SOLVIT AFRICA</title>
 
     <link
       rel="stylesheet"
@@ -14,67 +14,67 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <meta name="robots" content="noindex, follow" />
-    <style>
-      .selectt {
-        color: #000;
-
-        display: none;
-      }
-    </style>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
 
   <body>
     <div class="main">
-      <div class="container">
+      <div class="container-form">
         <div class="signup-content">
           <div class="signup-img">
             <div class="signup-img-content">
               <h2>Register now</h2>
-              <p>while seats are available !</p>
+              <p>While Seats are Available !</p>
             </div>
           </div>
           <div class="signup-form">
             <form method="POST" class="register-form" id="register-form">
               <div class="form-row">
-                <div class="form-group">
-                  <div class="form-input">
-                    <label for="first_name" class="required">First name</label>
-                    <input type="text" name="first_name" id="first_name" />
+                <div class="form-group-fm">
+                  <div class="form-input-fm">
+                    
+                    <input type="text" name="first_name" id="first_name" class="form-control-fm " placeholder="" />
+                    <label for="first_name" class="required" >First name</label>
                   </div>
-                  <div class="form-input">
+                  <div class="form-input-fm">
+                   
+                    <input type="text" name="last_name" id="last_name" placeholder="" class="form-control-fm"/>
                     <label for="last_name" class="required">Last name</label>
-                    <input type="text" name="last_name" id="last_name" />
                   </div>
 
-                  <div class="form-input">
+                  <div class="form-input-fm">
+                   
+                    <input type="text" name="email" id="email" placeholder="" class="form-control-fm" />
                     <label for="email" class="required">Email</label>
-                    <input type="text" name="email" id="email" />
                   </div>
-                  <div class="form-input">
-                    <label for="phone_number" class="required"
-                      >Phone number</label
-                    >
+                  <div class="form-input-fm">
+                  
                     <input
                       type="number"
                       name="phone_number"
                       id="phone_number"
+                      class="form-control-fm"
                     />
+                    <label for="phone_number" class="required"
+                    >Phone number</label
+                  >
                   </div>
-                  <div class="form-input">
-                    <label for="choose-file" class="label-title">Bio</label>
-                    <textarea
-                      class="form-input required"
+                  <span for="choose-file" class="label-title" placeholder="">Bio</span>
+                  <div class="form-input-fm">
+                          <textarea
+                      class="required"
                       rows="4"
                       cols="50"
                       style="height: auto"
-                    ></textarea>
+                    > 
+                  </textarea>
+                  
                   </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group-fm">
                   <div class="form-select">
                     <div class="label-flex">
-                      <label for="meal_preference"> Education Level</label>
+                      <span for="meal_preference"> Education Level</span>
                     </div>
                     <div class="select-list">
                       <select name="meal_preference" id="meal_preference">
@@ -87,40 +87,43 @@
                   </div>
                   <div class="form-radio">
                     <div class="label-flex">
-                      <label for="payment">Gender</label>
+                      <span for="payment" style="margin-top: -15px;">Gender</span>
                     </div>
-                    <div class="form-radio-group"style="position:relative; left:-2.5%; ">
+                    <div class="form-radio-group"style="position:relative; left:-5%; top:-15px;">
                       <div class="form-radio-item">
                         <div>
-                          <label>
+                          <span>
                             <input type="radio" name="Gender" value="Male" />
-                            Male</label
+                            Male</span
                           >
                         </div>
                       </div>
                       <div class="form-radio-item">
-                        <label>
+                        <span>
                           <input type="radio" name="Gender" value="Female" />
                           Female
+                          </span>
                       </div>
                       
                       
                     </div>
                   </div>
-                  <div class="form-input">
-                    <label for="Dob">Date of birth</label>
+                  <div class="form-input-fm">
+                    <span for="Dob">Date of birth</span>
                     <input type="date" name="Dob" id="Dob" class="required" />
                   </div>
-                  <div class="form-input">
-                    <label for="Salary">Exapected salary</label>
+                  <div class="form-input-fm">
+                   
                     <input
                       type="text"
                       name="Salary"
                       id="Salary"
-                      class="required"
+                      class="form-control-fm"
+                      
                     />
+                    <label for="Salary" class="required">Exapected salary</label>
                   </div>
-                  <div class="form-input">
+                  <div class="form-input-fm">
                     <label for="file-input" class="form-control-label"
                       >Upload You cv</label
                     >
@@ -135,32 +138,32 @@
               </div>
               <div class="form-radio" >
                 <div class="label-flex">
-                  <label for="category">category</label>
+                  <span for="category">category</span>
                 </div>
-                <div class="form-radio-group" style="position:relative; left:-2.5%; width:100%">
+                <div class="form-radio-group" style="position:relative; left:-3%; top:0px; width:100%">
                   <div class="form-radio-item">
                     <div>
-                      <label>
+                      <span>
                         <input type="radio" name="category" value="Front" />
-                        Front-End</label
+                        Front-End</span
                       >
                     </div>
                   </div>
                   <div class="form-radio-item">
-                    <label>
+                    <span>
                       <input type="radio" name="category" value="Back" />
-                      Back-End
+                      Back-End</span>
                   </div>
                   <div class="form-radio-item">
-                    <label>
+                    <span>
                       <input type="radio" name="category" value="frame" />
-                      Framework</label
+                      Framework</span
                     >
                   </div>
                   <div class="form-radio-item">
-                    <label>
+                    <span>
                       <input type="radio" name="category" value="mobile" />
-                      Mobile</label
+                      Mobile</span
                     >
                   </div>
                   
@@ -171,56 +174,56 @@
                   <div class="content form-radio-item" style="position: relative; left: -2.5%;">
                     <div class="Front selectt" >
                       <div class="form-radio-item">
-                        <label>
+                        <span>
                           <input type="checkbox" name="c" />
-                          Html</label
+                          Html</span
                         >
-                        <label>
+                        <span>
                           <input type="checkbox" name="c" />
-                          CSS</label
-                        > <label>
+                          CSS</span
+                        > <span>
                           <input type="checkbox" name="c" />
-                          javascript<label
+                          javascript<span
                         >
                        
                       </div>
                     </div>
                     <div class="Back selectt">
-                      <label>
+                      <span>
                         <input type="checkbox" name="c" />
-                        PHP</label
+                        PHP</span
                       >
-                      <label>
+                      <span>
                         <input type="checkbox" name="c" />
-                        React</label
-                      > <label>
+                        React</span
+                      > <span>
                         <input type="checkbox" name="c" />
-                        React Native<label
+                        React Native<span
                       >
                     </div>
 
                     <div class="frame selectt">
-                      <label>
+                      <span>
                         <input type="checkbox" name="c" />
-                        Bootstrap</label
+                        Bootstrap</span
                       >
-                      <label>
+                      <span>
                         <input type="checkbox" name="c" />
-                        Tailwind</label
-                      > <label>
+                        Tailwind</span
+                      > <span>
                         <input type="checkbox" name="c" />
-                        Laravel<label
+                        Laravel<span
                       >
                     </div>
 
                     <div class="mobile selectt">
-                      <label>
+                      <span>
                         <input type="checkbox" name="c" />
-                        Android</label
+                        Android</span
                       >
-                      <label>
+                      <span>
                         <input type="checkbox" name="c" />
-                        Fratter</label
+                        Fratter</span
                       >
                     </div>
                   </div>
@@ -265,5 +268,24 @@
     <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+        $(".form-group-fm .form-control-fm").blur(function(){
+           if($(this).val()!=""){
+             $(this).siblings("label").addClass("active");
+           }else{
+              $(this).siblings("label").removeClass("active");
+           }
+        });
+        
+        
+        
+      });
+              
+            
+      
+           
+          </script>
   </body>
 </html>

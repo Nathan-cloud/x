@@ -4,22 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SOLVIT AFRICA</title>
+    <title>SOLVIT || Sign Up </title>
 
     <link
       rel="stylesheet"
       href="fonts/material-icon/css/material-design-iconic-font.min.css"
     />
     <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css" />
     <meta name="robots" content="noindex, follow" />
     <style>
-      .selectt {
-        color: #000;
 
-        display: none;
-      }
     </style>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
@@ -29,6 +26,7 @@
       <div class="container">
         <div class="signup-content">
           <div class="signup-img">
+           <!-- <a href="../index.html"><img src="../images/logo.png" alt=""></a> -->
             <div class="signup-img-content">
               <h2>Register now</h2>
               <p>While Seats are Available !</p>
@@ -39,30 +37,36 @@
               <div class="form-row">
                 <div class="form-group">
                   <div class="form-input">
-                    <label for="first_name" class="required">First name</label>
-                    <input type="text" name="first_name" id="first_name" />
-                  </div>
-                  <div class="form-input">
-                    <label for="last_name" class="required">Last name</label>
-                    <input type="text" name="last_name" id="last_name" />
+                    
+                    <input type="text" name="first_name" id="first_name" required />
+                    <label for="first_name" >First name</label>
                   </div>
 
                   <div class="form-input">
+                    
+                    <input type="text" name="last_name" id="last_name" required />
+                    <label for="last_name" class="required" required>Last name</label>
+                  </div>
+
+                  <div class="form-input">
+             
+                    <input type="text" name="email" id="email" required/>
                     <label for="email" class="required">Email</label>
-                    <input type="text" name="email" id="email" />
                   </div>
                   <div class="form-input">
-                    <label for="phone_number" class="required"
-                      >Phone number</label
-                    >
+                    
                     <input
                       type="number"
                       name="phone_number"
                       id="phone_number"
+                      required
                     />
+                    <label for="phone_number" class="required" required
+                      >Phone Number</label
+                    >
                   </div>
                   <div class="form-input">
-                    <label for="choose-file" class="label-title">Bio</label>
+                    <span for="choose-file" class="label-title">Bio</span>
                     <textarea
                       class="form-input required"
                       rows="4"
@@ -71,12 +75,12 @@
                     ></textarea>
                   </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="position:relative; top:-50px; ">
                   <div class="form-select">
-                    <div class="label-flex">
-                      <label for="meal_preference"> Education Level</label>
+                    <div class="form-input">
+                      <span for="meal_preference" style="position:relative; top:14px; "> Education Level</sapn>
                     </div>
-                    <div class="select-list">
+                    <div class="select-list" >
                       <select name="meal_preference" id="meal_preference">
                         <option value="">Select Education Level</option>
                         <option value="Vegetarian">High school</option>
@@ -86,10 +90,10 @@
                     </div>
                   </div>
                   <div class="form-radio">
-                    <div class="label-flex">
-                      <label for="payment">Gender</label>
+                    <div class="form-input">
+                      <span for="choose-file" class="label-title">Gender<span>
                     </div>
-                    <div class="form-radio-group"style="position:relative; left:-2.5%; ">
+                    <div class="form-radio-group"style="position:relative; left:-4%; top:-30px; ">
                       <div class="form-radio-item">
                         <div>
                           <label>
@@ -107,22 +111,24 @@
                       
                     </div>
                   </div>
-                  <div class="form-input">
-                    <label for="Dob">Date of birth</label>
+                  <div class="form-input" style="position:relative; top:-40px; ">
+                    <span for="Dob">Date of birth</span>
                     <input type="date" name="Dob" id="Dob" class="required" />
                   </div>
-                  <div class="form-input">
-                    <label for="Salary">Exapected salary</label>
+                  <div class="form-input" >
+                    
                     <input
                       type="text"
                       name="Salary"
                       id="Salary"
                       class="required"
+                      required
                     />
+                    <label for="Salary">Expected Salary</label>
                   </div>
                   <div class="form-input">
-                    <label for="file-input" class="form-control-label"
-                      >Upload You cv</label
+                    <span for="file-input" class="form-control-label"
+                      >Upload You Cv</span
                     >
                     <input
                       type="file"
@@ -134,8 +140,8 @@
                 </div>
               </div>
               <div class="form-radio" >
-                <div class="label-flex">
-                  <label for="category">category</label>
+                <div class="form-input">
+                  <span for="category" class="label-title" style="position:relative; left:10px;">Categories<span>
                 </div>
                 <div class="form-radio-group" style="position:relative; left:-2.5%; width:100%">
                   <div class="form-radio-item">
