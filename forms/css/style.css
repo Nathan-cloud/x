@@ -13,7 +13,11 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+textarea::placeholder{
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
 @font-face {
   font-family: poppins;
   font-style: normal;
@@ -318,7 +322,7 @@ body {
 
 .signup-img-content {
   position: absolute;
-  top: 7%;
+  top: 13%;
   left: 50%;
   margin-bottom: 5%;
   transform: translate(-50%, -50%);
@@ -654,7 +658,21 @@ li.init:after {
 .form-submit {
   text-align: right;
 }
-
+.btn-cat {
+  
+  display: inline-block;
+  font-family: poppins;
+  font-weight: 700;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
 .submit {
   width: 150px;
   height: 50px;
@@ -768,13 +786,18 @@ transition: .5s;
   width: 100%;
   z-index: 99;
 }
+.signup-logo{
+  margin-left: 43%;
 
+
+}
 @media screen and (max-width: 1024px) {
   .container {
     width: calc(100% - 30px);
     max-width: 100%;
     margin: 0 auto;
   }
+ 
 
   .signup-form {
     width: 100%;
@@ -788,6 +811,7 @@ transition: .5s;
   .signup-content {
     width: 100%;
   }
+ 
   .form-radio-item {
     margin-right: 15px;
   }
@@ -804,6 +828,15 @@ transition: .5s;
     -o-flex-direction: column;
     -ms-flex-direction: column;
     margin: 0;
+  }
+  .btn-cat{
+    margin-left: 20px;
+  }
+  .signup-img-content{
+    margin-top: -16%;
+  }
+  .signup-logo{
+    margin-left: 30%;
   }
   .form-row .form-group {
     width: 100%;

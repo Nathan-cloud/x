@@ -15,18 +15,21 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <meta name="robots" content="noindex, follow" />
-    <style>
-
-    </style>
+   
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
 
   <body>
     <div class="main">
       <div class="container">
+        <div class="signup-logo">
+          <a href="../index.html"><img src="../images/logo.png" width="150" alt=""></a>
+        </div>
         <div class="signup-content">
+         
+
           <div class="signup-img">
-           <!-- <a href="../index.html"><img src="../images/logo.png" alt=""></a> -->
+          
             <div class="signup-img-content">
               <h2>Register now</h2>
               <p>While Places are Still Open !</p>
@@ -66,7 +69,7 @@
                     >
                   </div>
                   <div class="form-input">
-                    <label for="choose-file" class="label-title">Bio</label>
+                    
                     <textarea
                       class="form-input required"
                       rows="4"
@@ -154,16 +157,16 @@
                     </div>
                   </div>
                   <div class="form-radio-item">
-                    <label>
+                    <label for="cat">
                       <input type="radio" name="category" value="Back" />
                       Back-End
                   </div>
                   <div class="form-radio-item">
-                    <label>
+                    <label for="cat">
                       <input type="radio" name="category" value="frame" />
                       Framework</label
                     >
-                  </div>
+                  </div for="cat">
                   <div class="form-radio-item">
                     <label>
                       <input type="radio" name="category" value="mobile" />
@@ -179,14 +182,14 @@
                     <div class="Front selectt" >
                       <div class="form-radio-item">
                         <label>
-                          <input type="checkbox" name="c" />
+                          <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                           Html</label
                         >
                         <label>
-                          <input type="checkbox" name="c" />
+                          <input type="checkbox" name="c"  onclick="ShowCategory(this)" />
                           CSS</label
                         > <label>
-                          <input type="checkbox" name="c" />
+                          <input type="checkbox" name="c"  onclick="ShowCategory(this)" />
                           javascript<label
                         >
                        
@@ -194,45 +197,50 @@
                     </div>
                     <div class="Back selectt">
                       <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                         PHP</label
                       >
                       <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                         React</label
                       > <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                         React Native<label
                       >
                     </div>
 
                     <div class="frame selectt">
                       <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                         Bootstrap</label
                       >
                       <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                         Tailwind</label
                       > <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c"  onclick="ShowCategory(this)"/>
                         Laravel<label
                       >
                     </div>
 
                     <div class="mobile selectt">
                       <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                         Android</label
                       >
                       <label>
-                        <input type="checkbox" name="c" />
+                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
                         Fratter</label
                       >
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="form-input" id="category" style="position: relative; left: 1%; display: none; ">
+                <button class="btn-cat" >React</button>
+                
+              </div>
+           
 
               <div class="form-submit">
                 <input
@@ -263,6 +271,11 @@
               $(targetBox).show();
             });
           });
+          function ShowCategory(cat) {
+    var category = document.getElementById('category');
+    category.style.display = cat.checked ? 'block' : 'none';
+          }
+
         </script>
       </div>
     </div>
