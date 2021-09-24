@@ -1016,6 +1016,9 @@ a:active {
 @media (max-width: 1200px) and (min-width: 1199px) {
   #site-logo {
     margin-left: -50em;
+    position:relative;
+    right:100px;
+
   }
 }
 #site-logo {
@@ -1026,6 +1029,9 @@ a:active {
   align-items: center;
   justify-content: center;
   line-height: 1;
+  position:relative;
+  right:100px;
+
 }
 #site-logo img {
   width: 145px;
@@ -1157,7 +1163,7 @@ a:active {
 }
 
 .main-navigation ul {
-  font-weight: bold;
+  
   list-style: none;
   margin: 0px 0px;
   padding: 0px 0px;
@@ -1577,6 +1583,29 @@ a:active {
 }
 
 @media screen and (min-width: 1024px) {
+  #site-logo{
+    position:relative;
+    right:20px;
+  }
+  .main-navigation ul {
+    width:700px;
+    position:relative;
+  right: 30px;
+
+  }
+  .btn-cta-header .octf-btn{
+    padding: 10px 20px 10px  25px;
+  }
+  .btn-cta-header{
+    position:relative;
+    right: 40px;
+    bottom:10px;
+    width:150px;
+  }
+  .main-navigation ul li {
+   font-size: 13px;
+
+  }
   .header-static .is-stuck {
     background-color: #fff;
   }
