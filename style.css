@@ -1599,7 +1599,8 @@ a:active {
   .btn-cta-header{
     position:relative;
     right: 40px;
-    bottom:10px;
+    left:30px;
+    bottom:5px;
     width:150px;
   }
   .main-navigation ul li {
@@ -1640,6 +1641,9 @@ a:active {
 @media (max-width: 1265px) {
   .octf-btn-cta .contact-header {
     display: none;
+  }
+  .octf-main-header .octf-mainbar-row{
+    width:500px;
   }
 }
 /*--------------------------------------------------------------
