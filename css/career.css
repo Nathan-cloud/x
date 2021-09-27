@@ -27,7 +27,7 @@
   color: #666;
 }
 .company-info span a:hover {
-  color: #505050;
+  color: #43baff;
 }
 
 .company-info h4 {
@@ -53,7 +53,7 @@ a.button {
   position: relative;
   z-index: 10;
   color: #fff;
-  background-color: #505050;
+  background-color: #43baff;
   border: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -117,7 +117,7 @@ input[type='submit']:hover {
 .upload-btn:hover,
 #titlebar.photo-bg a.button.white:hover,
 a.button.dark:hover {
-  background-color: #505050;
+  background-color: #43baff;
   color: #fff;
 }
 
@@ -325,7 +325,7 @@ button.mfp-arrow {
 }
 
 .mfp-close:hover {
-  background-color: #505050;
+  background-color: #43baff;
 }
 
 .mfp-counter {
@@ -1000,7 +1000,7 @@ li .job-spotlight p {
 
 /* Hover Animation */
 .category-small-box:hover {
-  background-color: #505050;
+  background-color: #43baff;
   color: #fff;
   -webkit-transform: scale(1.06);
   -moz-transform: scale(1.07);
@@ -1038,7 +1038,7 @@ li .job-spotlight p {
   font-size: 36px;
   height: 42px;
   transition: 0.4s;
-  color: #505050;
+  color: #43baff;
   display: inline-block;
 }
 
@@ -1126,7 +1126,7 @@ li .job-spotlight p {
 }
 
 .list-search button {
-  background-color: #505050;
+  background-color: #43baff;
   cursor: pointer;
   color: #fff;
   float: right;
