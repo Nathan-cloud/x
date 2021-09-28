@@ -1579,7 +1579,8 @@ a:active {
 .admin-bar .header-overlay {
   top: 32px;
 }
-
+@media only screen and (max-width: 1024px) {
+}
 @media screen and (min-width: 1024px) {
   #site-logo {
     position: relative;

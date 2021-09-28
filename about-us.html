@@ -143,19 +143,66 @@
                     Software Innovation
                   </h2>
                 </div>
-                <div class="space-5"></div>
+               
+                <div id="mission" class="tabcontent">
+
+                  <p>
+                   <strong>Our Mission</strong>
+                    SOLVIT is the partner of choice for many of the world’s
+                    leading enterprises, SMEs and technology challengers. We help
+                    businesses elevate their value through custom software
+                    development, product design, QA and consultancy services.
+                  </p>
+                </div>
+  
+                 
+                <div id="vission" class="tabcontent"> 
+                  
+  
                 <p>
+                  <strong>Our Vision</strong> 
+  
                   SOLVIT is the partner of choice for many of the world’s
                   leading enterprises, SMEs and technology challengers. We help
                   businesses elevate their value through custom software
                   development, product design, QA and consultancy services.
                 </p>
+              </div>
+  
+               
+              <div id="Philosophy" class="tabcontent">
+                
+  
+              <p>
+                <strong>Our Philosophy</strong>
+  
+                SOLVIT is the partner of choice for many of the world’s
+                leading enterprises, SMEs and technology challengers. We help
+                businesses elevate their value through custom software
+                development, product design, QA and consultancy services.
+              </p>
+            </div>
+  
+             
+            <div id="Strategy" class="tabcontent">
+  
+              
+  
+            <p>
+              <strong>Our Strategy</strong>
+              
+              SOLVIT is the partner of choice for many of the world’s
+              leading enterprises, SMEs and technology challengers. We help
+              businesses elevate their value through custom software
+              development, product design, QA and consultancy services.
+            </p>
+          </div>
                 <p>
                   <em class="text-dark"
                     ><strong
-                      >We can help to maintain and modernize your IT
+                      >" We can help to maintain and modernize your IT
                       infrastructure and solve various infrastructure-specific
-                      issues a business may face.</strong
+                      issues a business may face."</strong
                     ></em
                   >
                 </p>
@@ -175,8 +222,8 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
+                <div class="row tab-header">
+                  <div class="active about-info col-lg-6 col-md-6"  onclick="openAbout(event, 'mission')" id="defaultOpen">
                     <a class="ot-image-box v3 st1" href="#">
                       <div class="overlay">
                         <h4>Our Mission</h4>
@@ -184,24 +231,24 @@
                       <img src="images/image-box1.jpg" alt="Our Mission" />
                     </a>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <a class="ot-image-box v3 st2" href="#">
+                  <div class="about-info col-lg-6 col-md-6" onclick="openAbout(event, 'vission')">
+                    <a class="ot-image-box v3 st2" href="#"   >
                       <div class="overlay">
                         <h4>Our Vision</h4>
                       </div>
                       <img src="images/image-box2.jpg" alt="Our Vision" />
                     </a>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <a class="ot-image-box v3 st3" href="#">
+                  <div class="about-info col-lg-6 col-md-6" onclick="openAbout(event, 'Philosophy')">
+                    <a class="ot-image-box v3 st3" href="#" >
                       <div class="overlay">
                         <h4>Our Philosophy</h4>
                       </div>
                       <img src="images/image-box3.jpg" alt="Our Philosophy" />
                     </a>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <a class="ot-image-box v3 st4 mb-0" href="#">
+                  <div class="about-info col-lg-6 col-md-6" onclick="openAbout(event, 'Strategy')">
+                    <a class="ot-image-box v3 st4 mb-0" href="#" >
                       <div class="overlay">
                         <h4>Our Strategy</h4>
                       </div>
@@ -1065,6 +1112,24 @@
     <script src="js/scripts.js"></script>
     <script src="js/header-mobile.js"></script>
     <!-- REVOLUTION JS FILES -->
+    <script>
+      function openAbout(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('tabcontent');
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('about-info');
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+        document.getElementById(cityName).style.display = 'block';
+        evt.currentTarget.className += ' active';
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById('defaultOpen').click();
+    </script>
 
     <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
