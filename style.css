@@ -1585,6 +1585,7 @@ a:active {
     position: relative;
     right: 20px;
   }
+
   .main-navigation ul {
     width: 700px;
     position: relative;
@@ -1592,6 +1593,7 @@ a:active {
   }
   .btn-cta-header .octf-btn {
     padding: 10px 20px 10px 25px;
+    position: relative;
   }
   .btn-cta-header {
     position: relative;
@@ -6006,9 +6008,11 @@ div.tp-bullet:hover {
   left: auto;
   right: -57px;
 }
+
 .btn-large {
   padding: 15px 25px;
 }
+
 .icon-box-s2.bg:hover {
   color: #fff;
 }
