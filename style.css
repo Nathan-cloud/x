@@ -4420,13 +4420,14 @@ object {
   display: none;
 }
 .pgrid .inner-post h3 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 .pgrid .inner-post .btn-readmore {
   margin-top: 0;
+  padding: 6px 0px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -7438,6 +7439,7 @@ svg:not(:root) {
 }
 .blog-grid .inner-post {
   padding: 30px;
+  height: 250px;
 }
 .blog-grid .post-box .owl-theme .owl-nav [class*='owl-'] {
   top: calc(50% - 30px);
