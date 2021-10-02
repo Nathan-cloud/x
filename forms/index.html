@@ -1,289 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SOLVIT - Sign Up</title>
+    <meta charset="utf-8" />
+    <title>Wizard-v6</title>
+     <meta name="robots" content="noindex, follow" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
+    <link rel="stylesheet" type="text/css" href="css/opensans-font.css" />
     <link
       rel="stylesheet"
-      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+      type="text/css"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
     />
-    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css" />
-    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <meta name="robots" content="noindex, follow" />
+ 
+ 
    
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
-
   <body>
-    <div class="main">
-      <div class="container">
-        <div class="signup-logo">
-          <a href="../index.html"><img src="../images/logo.png" width="150" alt=""></a>
-        </div>
-        <div class="signup-content">
-         
-
-          <div class="signup-img">
-          
-            <div class="signup-img-content">
-              <h2>Register now</h2>
-              <p>While Places are Still Open !</p>
-            </div>
-          </div>
-          <div class="signup-form">
-            <form method="POST" class="register-form" id="register-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <div class="form-input">
-                    
-                    <input type="text" name="first_name" id="first_name" required />
-                    <label for="first_name" >First name</label>
+    <div class="page-content">
+      <div class="wizard-heading">Create Account on Our Platform</div>
+      <div class="wizard-v6-content">
+        <div class="wizard-form">
+          <form
+            class="form-register"
+            id="form-register"
+            action="#"
+            method="post"
+          >
+            <div id="form-total">
+              <h2>
+                <p class="step-icon"><span>1</span></p>
+                <span class="step-text">Personal Info</span>
+              </h2>
+              <section>
+                <div class="inner">
+                  <div class="form-heading">
+                    <h3>Personal Info</h3>
+                    <span>1/3</span>
                   </div>
-
-                  <div class="form-input">
-                    
-                    <input type="text" name="last_name" id="last_name" required />
-                    <label for="last_name" class="required" required>Last name</label>
-                  </div>
-
-                  <div class="form-input">
-             
-                    <input type="text" name="email" id="email" required/>
-                    <label for="email" class="required">Email</label>
-                  </div>
-                  <div class="form-input">
-                    
-                    <input
-                      type="number"
-                      name="phone_number"
-                      id="phone_number"
-                      required
-                    />
-                    <label for="phone_number" class="required" required
-                      >Phone Number</label
-                    >
-                  </div>
-                  <div class="form-input">
-                    
-                    <textarea
-                      class="form-input required"
-                      rows="4"
-                      cols="50"
-                      style="height: auto"
-                      placeholder="Tell us little About Yourself"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="form-group" style="position:relative; top:-50px; ">
-                  <div class="form-select">
-                    <div class="form-input">
-                      <span for="meal_preference" style="position:relative; top:14px; "> Education Level</sapn>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <label class="form-row-inner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="first_name"
+                          name="first_name"
+                          required
+                        />
+                        <span class="label">First Name</span>
+                      </label>
                     </div>
-                    <div class="select-list" >
-                      <select name="meal_preference" id="meal_preference">
-                        <option value="">Select Education Level</option>
-                        <option value="Vegetarian">High school</option>
-                        <option value="Kosher">Collage/University</option>
-                        <option value="Asian Vegetarian">IPRC Technics</option>
-                      </select>
+                    <div class="form-holder">
+                      <label class="form-row-inner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="last_name"
+                          name="last_name"
+                          required
+                        />
+                        <span class="label">Last Name</span>
+                      </label>
                     </div>
                   </div>
-                  <div class="form-radio">
-                    <div class="form-input">
-                      <span for="choose-file" class="label-title">Gender<span>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <label class="form-row-inner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phone"
+                          name="phone"
+                          required
+                        />
+                        <span class="label">Phone Number</span>
+                      </label>
                     </div>
-                    <div class="form-radio-group"style="position:relative; left:-4%; top:-30px; ">
-                      <div class="form-radio-item">
-                        <div>
-                          <label>
-                            <input type="radio" name="Gender" value="Male" />
-                            Male</label
-                          >
-                        </div>
-                      </div>
-                      <div class="form-radio-item">
-                        <label>
-                          <input type="radio" name="Gender" value="Female" />
-                          Female
-                      </div>
-                      
-                      
+                    <div class="form-holder">
+                      <label class="form-row-inner">
+                        <input
+                          type="email"
+                          name="your_email_1"
+                          id="your_email_1"
+                          class="form-control"
+                          required
+                        />
+                        <span class="label">E-Mail</span>
+                      </label>
                     </div>
                   </div>
-                  <div class="form-input" style="position:relative; top:-40px; ">
-                    <span for="Dob">Date of birth</span>
-                    <input type="date" name="Dob" id="Dob" class="required" />
-                  </div>
-                  <div class="form-input" >
-                    
-                    <input
-                      type="text"
-                      name="Salary"
-                      id="Salary"
-                      class="required"
-                      required
-                    />
-                    <label for="Salary">Expected Salary</label>
-                  </div>
-                  <div class="form-input">
-                    <span for="file-input" class="form-control-label"
-                      >Upload You Cv</span
-                    >
-                    <input
-                      type="file"
-                      id="file-input"
-                      name="file-input"
-                      class="form-control-file required"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="form-radio" >
-                <div class="form-input">
-                  <span for="category" class="label-title" style="position:relative; left:10px;">Categories<span>
-                </div>
-                <div class="form-radio-group" style="position:relative; left:-2.5%; width:100%">
-                  <div class="form-radio-item">
-                    <div>
-                      <label>
-                        <input type="radio" name="category" value="Front" />
-                        Front-End</label
+                  <div class="form-row form-row-date">
+                    <div class="form-holder form-holder-2">
+                      <label for="date" class="special-label"
+                        >Date of Birth:</label
                       >
+                      <input type="date" name="" id="" required />
                     </div>
                   </div>
-                  <div class="form-radio-item">
-                    <label for="cat">
-                      <input type="radio" name="category" value="Back" />
-                      Back-End
+                  <div class="form-row">
+                    <div class="form-holder form-holder-2">
+                      <label class="form-row-inner">
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          id="address"
+                          name="info"
+                          required
+                          id=""
+                          cols="30"
+                          rows="10"
+                          placeholder=""
+                        >
+Tell us a little About Yourself
+                            </textarea
+                        >
+                      </label>
+                    </div>
                   </div>
-                  <div class="form-radio-item">
-                    <label for="cat">
-                      <input type="radio" name="category" value="frame" />
-                      Framework</label
-                    >
-                  </div for="cat">
-                  <div class="form-radio-item">
-                    <label>
-                      <input type="radio" name="category" value="mobile" />
-                      Mobile</label
-                    >
+                </div>
+              </section>
+
+              <h2>
+                <p class="step-icon"><span>2</span></p>
+                <span class="step-text">Technical Info</span>
+              </h2>
+              <section>
+                <div class="inner">
+                  <div class="form-heading">
+                    <h3>Technical Infomation</h3>
+                    <span>2/3</span>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-holder form-holder-2">
+                      <label for="level" class="special-label-1"
+                        >Education Level
+                      </label>
+                      <select name="Education" id="level"  class="form-control" required>
+                        <option
+                          value=""
+                          selected
+                        >
+                          Select Education Level
+                        </option>
+                        <option value="">Select Education Level</option>
+                        <option value="High school">High school</option>
+                        <option value="Collage/University">
+                          Collage/University
+                        </option>
+                        <option value="IPRC Technics">IPRC Technics</option>
+                      </select>
+                      <span class="select-btn">
+                        <i class="zmdi zmdi-chevron-down"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    
+    <div class="radio-container">
+      <input type="radio" id="windows" name="os" value="Male" required/>
+      <label for="windows" class="Gender">Male</label>
+
+      <input type="radio" id="mac" name="os" value="Female" required/>
+      <label for="mac" class="Gender">Female</label>
+    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                  <label class="form-row-inner">
+                  <input type="text" class="form-control" id="pay" name="pay" required>
+                  <span class="label">Expected Salary</span>
+                  </label>
+                  </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-holder form-holder-2">
+                      <label for="room" class="special-label-1"
+                      >
+                      Upload Your Cv
+                    </label>
+                    <label class="form-row-inner">
+                    <input type="file" class="form-control" id="file" name="cv" required>
+                    
+                    </label>
+                    </div>
+                    </div>
+               
+                
+
+              </section>
+
+              <h2>
+                <p class="step-icon"><span>3</span></p>
+                <span class="step-text">Confirm</span>
+              </h2>
+              <section>
+                <div class="inner">
+                  <div class="form-heading">
+                    <h3>Comfirm Details</h3>
+                    <span>3/3</span>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tbody>
+                        <tr class=>
+                          <th>Full Name:</th>
+                          <td >John Doe</td>
+                          
+                        </tr>
+
+                        <tr>
+                          <th>Your Bio:</th>
+                          <td>I am good Developer here</td>
+                        </tr>
+
+                        <tr>
+                          <th>Education Level:</th>
+                          <td>Collage/Univesity</td>
+                        </tr>
+
+                        <tr >
+                          <th>Email:</th>
+                          <td id="email-val" value="">JohnDoe@gmail.com </td>
+                        </tr>
+
+                        <tr>
+                          <th>Gender:</th>
+                          <td>Male</td>
+                        </tr>
+
+
+                        <tr >
+                          <th>Phone Number:</th>
+                          <td id="p-number">250 788 450 12</td>
+                        </tr>
+
+                        <tr>
+                          <th>Dob:</th>
+                          <td id="Dob">19/08/1999</td>
+                        </tr>
+
+                        <tr >
+                          <th>Cv:</th>
+                          <td>MyCv.pdf</td>
+                        </tr>
+                        <tr >
+                          <th>Salary:</th>
+                          <td id="Salary">400.00$</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                   
                 </div>
-              </div>
-              <div class="form-radio">
-                <div class="form-radio-group">
-                  <div class="content form-radio-item" style="position: relative; left: -2.5%;">
-                    <div class="Front selectt" >
-                      <div class="form-radio-item">
-                        <label>
-                          <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                          Html</label
-                        >
-                        <label>
-                          <input type="checkbox" name="c"  onclick="ShowCategory(this)" />
-                          CSS</label
-                        > <label>
-                          <input type="checkbox" name="c"  onclick="ShowCategory(this)" />
-                          javascript<label
-                        >
-                       
-                      </div>
-                    </div>
-                    <div class="Back selectt">
-                      <label>
-                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                        PHP</label
-                      >
-                      <label>
-                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                        React</label
-                      > <label>
-                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                        React Native<label
-                      >
-                    </div>
-
-                    <div class="frame selectt">
-                      <label>
-                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                        Bootstrap</label
-                      >
-                      <label>
-                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                        Tailwind</label
-                      > <label>
-                        <input type="checkbox" name="c"  onclick="ShowCategory(this)"/>
-                        Laravel<label
-                      >
-                    </div>
-
-                    <div class="mobile selectt">
-                      <label>
-                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                        Android</label
-                      >
-                      <label>
-                        <input type="checkbox" name="c" onclick="ShowCategory(this)" />
-                        Fratter</label
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-input" id="category" style="position: relative; left: 1%; display: none; ">
-                <button class="btn-cat" >React</button>
-                
-              </div>
-           
-
-              <div class="form-submit">
-                <input
-                  type="submit"
-                  value="Submit"
-                  class="submit"
-                  id="submit"
-                  name="submit"
-                />
-                <input
-                  type="submit"
-                  value="Reset"
-                  class="submit"
-                  id="reset"
-                  name="reset"
-                />
-              </div>
-            </form>
-          </div>
+                <button type="submit" class="btn-submit">Submit</button>
+              </section>
+            </div>
+         
+          </form>
         </div>
-
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $('input[type="radio"]').click(function () {
-              var inputValue = $(this).attr('value');
-              var targetBox = $('.' + inputValue);
-              $('.selectt').not(targetBox).hide();
-              $(targetBox).show();
-            });
-          });
-          function ShowCategory(cat) {
-    var category = document.getElementById('category');
-    category.style.display = cat.checked ? 'block' : 'none';
-          }
-
-        </script>
       </div>
     </div>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/nouislider/nouislider.min.js"></script>
-    <script src="vendor/wnumb/wNumb.js"></script>
-    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.steps.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
+
   </body>
 </html>
